@@ -18,6 +18,24 @@ else
 
 //По заданному номеру дня недели вывести его название
 // DZ_02
+int day_week;
+Console.Write("Введите номеру дня недели (1-7): ");
+day_week = int.Parse(Console.ReadLine());
+if (day_week > 0 & day_week < 8)
+{
+if (day_week == 1)  {Console.WriteLine("Понедельник");} 
+if (day_week == 2)  {Console.WriteLine("Вторник");}
+if (day_week == 3)  {Console.WriteLine("Среда");}
+if (day_week == 4)  {Console.WriteLine("Четверг");}
+if (day_week == 5)  {Console.WriteLine("Пятница");}
+if (day_week == 6)  {Console.WriteLine("Суббота");}
+if (day_week == 7)  {Console.WriteLine("Воскресение");}
+}
+else
+{
+    Console.WriteLine(" Ошибка при вводе значений. Нужно ввести число от 1 до 7.");
+}
+
 //Выяснить является ли число чётным
 // DZ_03
 //Показать четные числа от 1 до N
