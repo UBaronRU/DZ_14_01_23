@@ -1,5 +1,21 @@
 ﻿//По двум заданным числам проверять является ли первое квадратом второго
 // DZ_01
+int Num1;
+int Num2;
+Console.Write("Введите число 1: ");
+Num1 = int.Parse(Console.ReadLine());
+Console.Write("Введите число 2: ");
+Num2 = int.Parse(Console.ReadLine());
+if (Num1 == Num2*Num2)
+{
+   Console.WriteLine("Число "+ Num1 +" квадрат числа "+Num2); 
+}
+else
+{
+    Console.WriteLine(" Число "+ Num1 +" не является квадратом "+Num2);
+}
+
+
 //По заданному номеру дня недели вывести его название
 // DZ_02
 //Выяснить является ли число чётным
