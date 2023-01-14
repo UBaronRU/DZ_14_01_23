@@ -48,6 +48,26 @@ else Console.WriteLine("Число "+ Num1 +" Нечетное ");
 
 //Показать четные числа от 1 до N
 // DZ_04
+int Num1;
+int Num2;
+int Num3 = 1;
+Console.Write("Введите число, а мы покажем все четные числа от 1 и до введенного числа : ");
+Num1 = int.Parse(Console.ReadLine());
+if (Num1 > 0)
+{
+    while (Num3 <= Num1)
+    {
+        Num2 = Num3 /2;
+        if (Num3 == Num2*2) Console.WriteLine(Num3); 
+        Num3 = Num3 +1;
+    }
+    Console.WriteLine("Расчет окончен!");
+}
+else
+{
+  Console.WriteLine("Ошибка! Число должно быть 1 или больше!"); 
+}
+
 //Показать последнюю цифру трёхзначного числа
 // DZ_05
 //Показать вторую цифру трёхзначного числа
