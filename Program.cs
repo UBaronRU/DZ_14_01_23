@@ -38,6 +38,14 @@ else
 
 //Выяснить является ли число чётным
 // DZ_03
+int Num1;
+int Num2;
+Console.Write("Введите число, а мы определим четное ли оно : ");
+Num1 = int.Parse(Console.ReadLine());
+Num2 = Num1 /2;
+if (Num1 == Num2*2) Console.WriteLine("Число "+ Num1 +" Четное "); 
+else Console.WriteLine("Число "+ Num1 +" Нечетное ");
+
 //Показать четные числа от 1 до N
 // DZ_04
 //Показать последнюю цифру трёхзначного числа
