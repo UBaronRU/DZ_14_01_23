@@ -16,5 +16,29 @@
 // DZ_08
 //Выяснить, кратно ли число заданному, если нет, вывести остаток.
 // DZ_09
+
+int Num1; // Первое число
+int Num2; //  Второе число
+int Num3; // Кратность
+int Num4; // Остаток
+Console.Write("Введите основное число  : ");
+Num1 = int.Parse(Console.ReadLine());
+Console.Write("Введите второе число, а мы прверим кратно ли первое число второму: ");
+Num2 = int.Parse(Console.ReadLine());
+if (Num1 > 0 & Num2 > 0)
+{
+Num3 =  Num1 / Num2;
+if (Num1 == Num3*Num2 ) {Console.WriteLine("Первое число "+ Num1 +" кратно " + Num2 +" (делится без остатка)");}
+else 
+{
+    Num4 = Num1 - Num3 * Num2;
+    Console.WriteLine("Первое число "+ Num1 +" не кратно " + Num2 +" остаток " + Num4);
+}
+}
+else
+{
+  Console.WriteLine("Ошибка! Числа должны быть больше 0");  
+}
+
 //Найти третью цифру числа или сообщить, что её нет
 // DZ_10
